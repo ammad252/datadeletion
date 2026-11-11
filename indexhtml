@@ -1,217 +1,68 @@
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Delete Your Data – HiddenCalculator</title>
-
+<title>Delete Your Data – [YOUR APP NAME]</title>
+<!--
+  PEHLE YE 3 CHEEZEIN REPLACE KARO (Ctrl+H se poori file mein):
+    [YOUR APP NAME]  -> app ka naam
+    [YOUR NAME]      -> tumhara naam (ya company ka naam)
+    [YOUR EMAIL]     -> tumhari contact email
+-->
 <style>
-:root {
-    --bg: #ffffff;
-    --fg: #1d1b20;
-    --muted: #49454f;
-    --accent: #6750a4;
-    --line: #e7e0ec;
-    --box: #f3edf7;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #141218;
-        --fg: #e6e0e9;
-        --muted: #cac4d0;
-        --accent: #d0bcff;
-        --line: #36343b;
-        --box: #211f26;
-    }
-}
-
-body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font: 16px/1.65 system-ui, Arial, sans-serif;
-}
-
-main {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 32px 20px 64px;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-h2 {
-    font-size: 20px;
-    margin-top: 32px;
-    padding-top: 16px;
-    border-top: 1px solid var(--line);
-}
-
-.muted {
-    color: var(--muted);
-    font-size: 14px;
-}
-
-a {
-    color: var(--accent);
-}
-
-ol, ul {
-    padding-left: 22px;
-}
-
-.box {
-    background: var(--box);
-    border-radius: 12px;
-    padding: 14px 18px;
-    margin: 12px 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
+  :root { --bg:#ffffff; --fg:#1d1b20; --muted:#49454f; --accent:#6750a4; --line:#e7e0ec; --box:#f3edf7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141218; --fg:#e6e0e9; --muted:#cac4d0; --accent:#d0bcff; --line:#36343b; --box:#211f26; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  ol, ul { padding-left:22px; }
+  .box { background:var(--box); border-radius:12px; padding:14px 18px; margin:12px 0; }
 </style>
 </head>
-
 <body>
 <main>
 
 <h1>Delete Your Data</h1>
+<p class="muted">App: [YOUR APP NAME] &nbsp;|&nbsp; Developer: [YOUR NAME]</p>
 
-<p class="muted">
-App: HiddenCalculator |
-Developer: Ammad Saleem
-</p>
+<p>You can ask us to delete your account and all data linked to it at any time. This page explains how.</p>
 
-<p>
-You can request deletion of your account and personal
-data linked to HiddenCalculator at any time.
-This page explains how to submit a deletion request.
-</p>
-
-<h2>1. If You Signed In With Google, Facebook or Email</h2>
-
+<h2>If you signed in with Google, Facebook or email</h2>
 <ol>
-<li>
-Send an email to:
-<a href="mailto:ammadsaleem252@gmail.com?subject=Delete%20My%20Data">
-ammadsaleem252@gmail.com
-</a>
-</li>
-
-<li>
-Use the subject:
-<b>Delete My Data</b>
-</li>
-
-<li>
-Include the email address associated with your account
-so we can identify your account.
-</li>
-
-<li>
-We will review your request and process eligible
-account and data deletion requests within 30 days.
-</li>
+<li>Send an email to <a href="mailto:[YOUR EMAIL]?subject=Delete%20my%20data">[YOUR EMAIL]</a> with the subject <b>"Delete my data"</b>.</li>
+<li>Write the email address of your account (or the name on your Facebook account) so we can find it. Please send it from the same email address if you can.</li>
+<li>We will confirm by email and delete your data within <b>30 days</b>.</li>
 </ol>
 
 <div class="box">
-
-<b>Data that may be deleted, where stored by the app:</b>
-
+<b>What we delete:</b>
 <ul>
-<li>Firebase Authentication account information.</li>
-<li>Encrypted cloud backup files.</li>
-<li>Vault file names and folder information.</li>
-<li>Stored backup keys and PIN hashes.</li>
+<li>Your account (sign-in record) from Firebase Authentication</li>
+<li>Your cloud backup: encrypted vault files, file names, folder names</li>
+<li>Your backup key and the stored PIN hash</li>
 </ul>
-
 </div>
 
-<h2>2. If You Used Guest Mode</h2>
+<h2>If you used guest mode</h2>
+<p>Guest data is stored only on your phone, and we do not have a copy. To delete it, uninstall the app or go to <b>Settings → Apps → [YOUR APP NAME] → Storage → Clear data</b>.</p>
 
-<p>
-Guest data is stored locally on your device.
-If no cloud backup was created, we do not have
-a copy of your guest files.
-</p>
-
-<p>
-To remove guest data, you can uninstall the app
-or follow these steps:
-</p>
-
-<p>
-<b>Settings → Apps → HiddenCalculator → Storage → Clear Data</b>
-</p>
-
-<p>
-Please note that clearing app data or uninstalling
-the app may permanently remove locally stored files.
-</p>
-
-<h2>3. Remove App Access From Facebook or Google</h2>
-
-<p>
-You can also remove HiddenCalculator's access
-from your social accounts.
-</p>
-
+<h2>Remove the app's access from your Facebook or Google account (optional)</h2>
 <ul>
-
-<li>
-<b>Facebook:</b>
-Go to Facebook Settings → Apps and Websites,
-select HiddenCalculator and choose Remove.
-</li>
-
-<li>
-<b>Google:</b>
-Visit
-<a href="https://myaccount.google.com/permissions">
-Google Account Permissions
-</a>
-and remove HiddenCalculator if listed.
-</li>
-
+<li><b>Facebook:</b> Settings &amp; privacy → Settings → Apps and Websites → select [YOUR APP NAME] → Remove.</li>
+<li><b>Google:</b> open <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and remove [YOUR APP NAME].</li>
 </ul>
+<p class="muted">Removing access this way stops future sign-in, but it does not delete your backup. To delete the backup, email us as described above.</p>
 
-<p class="muted">
-Removing app access does not automatically delete
-any existing account or cloud backup. Submit an
-email deletion request for that purpose.
-</p>
+<h2>Contact</h2>
+<p>[YOUR NAME]<br>Email: <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></p>
 
-<h2>4. Contact Us</h2>
-
-<p>
-Developer: Ammad Saleem
-</p>
-
-<p>
-Email:
-<a href="mailto:ammadsaleem252@gmail.com">
-ammadsaleem252@gmail.com
-</a>
-</p>
-
-<h2>5. Privacy Policy</h2>
-
-<p>
-Read our
-<a href="index.html">Privacy Policy</a>
-to learn more about how HiddenCalculator handles
-your information.
-</p>
-
-<p class="muted">
-Last updated: November 11, 2026
-</p>
+<p class="muted"><a href="privacy_policy.html">Read our Privacy Policy</a></p>
 
 </main>
 </body>
